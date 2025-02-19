@@ -1,0 +1,146 @@
+/* Allgemeine Styling für die gesamte Seite */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f0f4f8, #e1e8f0); /* Sanfter Gradient als Hintergrund */
+    color: #333;
+}
+
+/* Container für die gesamte Seite */
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); /* Weicher Schatten */
+    border-radius: 15px;
+    animation: fadeIn 1s ease-in-out; /* Ein sanfter Fade-In-Effekt */
+}
+
+/* Stil für die Hauptüberschrift */
+header h1 {
+    text-align: center;
+    font-size: 90px;
+    color: #4b4b4b;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1); /* Sanfter Schatten für Tiefe */
+}
+
+/* Bereich für den Inhalt mit den Sektionen */
+.section-content {
+    margin-top: 60px;
+    text-align: center;
+}
+
+/* Stil für das Fieldset mit modernen Farben und Abgerundeten Ecken */
+.section-box {
+    border-radius: 20px;
+    background: linear-gradient(135deg, #ffb6c1, #add8e6); /* Sanfte Übergänge von Rosa zu Blau */
+    padding: 40px;
+    margin: 30px auto;
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Sanfter Schatten */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Stil für das Fieldset bei Hover */
+.section-box:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2); /* Verstärkter Schatten */
+    transform: translateY(-5px); /* Leichtes Hochspringen */
+}
+
+/* Stil für die Überschrift innerhalb der Sektion */
+.heading-1 h2 {
+    font-size: 60px;
+    font-weight: bold;
+    background: linear-gradient(to right, white 45%, lightgray 48%, gray 50%, black 52%, black 55%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* Container für das "Was ist das?"-Legend unter dem Fieldset */
+.was-das-container {
+    margin-top: 30px;
+}
+
+/* Stil für das legend-Tag mit dem Link (angepasst) */
+.was-das {
+    text-align: center;
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-size: 22px;
+    background: linear-gradient(135deg, #ffb6c1, #add8e6); /* Gleiche Farben wie die "Girls / Boys Day"-Box */
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover-Effekt für den Link */
+.was-das a {
+    
+    text-decoration: underline;
+}
+
+.was-das a:hover {
+    
+    transform: translateY(-3px); /* Leichtes Hochspringen */
+    animation: bounce 0.6s ease-in-out; /* Bounce-Effekt nur beim Hover */
+}
+
+/* Styling für den Video-Bereich */
+.Kurzfilm {
+   
+    text-align: center;
+    margin-top: 50px;
+    animation: fadeIn 1.2s ease-in-out; /* Fade-In für den Video-Bereich */
+}
+
+.Kurzfilm h2 {
+    font-size: 50px;
+    color: #4b4b4b;
+    margin-bottom: 20px;
+}
+
+/* Hinzufügen von Responsive Design */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 60px; /* Kleinere Schrift auf mobilen Geräten */
+    }
+
+    .section-box {
+        width: 90%; /* Mehr Platz für kleinere Bildschirme */
+    }
+
+    .Kurzfilm h2 {
+        font-size: 40px;
+    }
+}
+
+/* Keyframe-Animationen */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
