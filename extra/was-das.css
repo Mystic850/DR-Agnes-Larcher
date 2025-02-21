@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f8; /* Sanftes, modernes Grau */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #4b4b4b;
+    font-size: 3em;
+    margin: 20px 0;
+    font-weight: 600;
+}
+
+fieldset {
+    border-radius: 15px;
+    margin: 30px auto;
+    padding: 30px;
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+    background: linear-gradient(135deg, #ffb6c1, #add8e6); /* Sanfte, ansprechende Farben */
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+    font-size: 2em;
+    font-weight: bold;
+    color: #4b4b4b;
+}
+
+.content, .content-2 {
+    padding: 20px;
+}
+
+.content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 15px 0;
+}
+
+.content-2 {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+}
+
+strong {
+    color: #4b4b4b;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Verfeinerte Styling für Links */
+a {
+    color: #4b8bbe;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #3a7ca5;
+}
+
+@media (max-width: 768px) {
+    fieldset {
+        width: 90%;
+    }
+}
