@@ -62,6 +62,7 @@ header h1 {
     text-align: center;
     padding: 15px;
     font-size: 24px;
+    margin-top: 25px;
     border-radius: 15px;
     background: linear-gradient(135deg, #ffb6c1, #add8e6);
     font-weight: bold;
@@ -98,9 +99,13 @@ video {
         font-size: 40px;
     }
     .section-box {
-        width: 85%;
+        width: 95%;
     }
     .Kurzfilm h2 {
         font-size: 28px;
     }
+}
+.Quiz {
+    margin-top: 15px;
+    
 }
