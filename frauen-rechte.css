@@ -10,10 +10,10 @@ body {
 /* Container */
 .container {
     max-width: 1200px;
-    margin: 50px auto;
+    margin: 30px auto;
     padding: 20px;
     background-color: white;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     animation: fadeIn 1s ease-in-out;
 }
@@ -21,52 +21,46 @@ body {
 /* Header */
 header h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: 42px;
     color: #4b4b4b;
     font-weight: 600;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Inhalte */
 .section-content {
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: center;
 }
 
 .section-box {
-    border-radius: 20px;
+    border-radius: 15px;
     background: linear-gradient(135deg, #ffb6c1, #add8e6);
-    padding: 20px;
-    margin: 20px auto;
+    padding: 15px;
+    margin: 15px auto;
     width: 90%;
     max-width: 900px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .heading-1 h2 {
-    font-size: 40px;
+    font-size: 36px;
     font-weight: bold;
     background: linear-gradient(to right, white 45%, lightgray 48%, gray 50%, black 52%, black 55%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
-.was-das-container {
-    margin-top: 10px;
-}
-
+/* Buttons */
 .was-das {
     display: block;
     text-align: center;
-    padding: 15px;
-    font-size: 24px;
-    margin-top: 25px;
-    border-radius: 15px;
+    padding: 12px;
+    font-size: 20px;
+    margin-top: 15px;
+    border-radius: 12px;
     background: linear-gradient(135deg, #ffb6c1, #add8e6);
     font-weight: bold;
-    transition: background-color 0.3s ease;
 }
 
 .was-das a {
@@ -77,80 +71,63 @@ header h1 {
 /* Video */
 .Kurzfilm {
     text-align: center;
-    margin-top: 30px;
-    animation: fadeIn 1.2s ease-in-out;
+    margin-top: 25px;
 }
 
 .Kurzfilm h2 {
-    font-size: 30px;
+    font-size: 28px;
     color: #4b4b4b;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 video {
     width: 100%;
     max-width: 800px;
     height: auto;
+    border-radius: 10px;
 }
 
 /* Responsiveness */
 @media screen and (max-width: 768px) {
     header h1 {
-        font-size: 40px;
+        font-size: 36px;
     }
 
     .container {
         padding: 15px;
-        margin: 20px auto;
     }
 
     .section-box {
         width: 95%;
-        padding: 15px;
+        padding: 12px;
     }
 
     .heading-1 h2 {
-        font-size: 32px;
+        font-size: 30px;
     }
 
     .was-das {
-        font-size: 20px;
-        padding: 12px;
+        font-size: 18px;
+        padding: 10px;
     }
 
     .Kurzfilm h2 {
         font-size: 24px;
     }
-
-    /* Video resizing for mobile */
-    video {
-        max-width: 100%;
-        height: auto;
-    }
-
-    /* Adjust margins and padding for smaller screens */
-    .was-das-container {
-        margin-top: 15px;
-    }
-    
-    /* Adjust font sizes for small screens */
-    .section-box {
-        font-size: 16px;
-    }
 }
 
-/* Very small screens (e.g., under 480px width) */
 @media screen and (max-width: 480px) {
     header h1 {
         font-size: 28px;
     }
 
     .heading-1 h2 {
-        font-size: 28px;
+        font-size: 26px;
     }
 
     .was-das {
-        font-size: 18px;
+        font-size: 16px;
+        padding: 8px;
     }
 
     .section-box {
@@ -159,15 +136,5 @@ video {
 
     .Kurzfilm h2 {
         font-size: 20px;
-    }
-
-    /* Further adjust layout */
-    .container {
-        padding: 10px;
-    }
-
-    .was-das {
-        font-size: 16px;
-        padding: 10px;
     }
 }
