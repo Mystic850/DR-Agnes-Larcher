@@ -5,12 +5,13 @@ body {
     padding: 0;
     background: linear-gradient(135deg, #f0f4f8, #e1e8f0);
     color: #333;
+    overflow-x: hidden;
 }
 
 /* Container */
 .container {
     max-width: 1200px;
-    margin: 30px auto;
+    margin: 20px auto;
     padding: 20px;
     background-color: white;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
@@ -21,46 +22,51 @@ body {
 /* Header */
 header h1 {
     text-align: center;
-    font-size: 42px;
+    font-size: 38px;
     color: #4b4b4b;
     font-weight: 600;
+    line-height: 1.2;
 }
 
 /* Inhalte */
 .section-content {
-    margin-top: 20px;
+    margin-top: 15px;
     text-align: center;
+    padding: 10px;
 }
 
 .section-box {
     border-radius: 15px;
     background: linear-gradient(135deg, #ffb6c1, #add8e6);
-    padding: 15px;
-    margin: 15px auto;
+    padding: 12px;
+    margin: 10px auto;
     width: 90%;
-    max-width: 900px;
+    max-width: 800px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .heading-1 h2 {
-    font-size: 36px;
+    font-size: 28px;
     font-weight: bold;
     background: linear-gradient(to right, white 45%, lightgray 48%, gray 50%, black 52%, black 55%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 /* Buttons */
 .was-das {
     display: block;
     text-align: center;
-    padding: 12px;
-    font-size: 20px;
-    margin-top: 15px;
-    border-radius: 12px;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+    border-radius: 10px;
     background: linear-gradient(135deg, #ffb6c1, #add8e6);
     font-weight: bold;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .was-das a {
@@ -71,70 +77,73 @@ header h1 {
 /* Video */
 .Kurzfilm {
     text-align: center;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .Kurzfilm h2 {
-    font-size: 28px;
+    font-size: 24px;
     color: #4b4b4b;
     margin-bottom: 15px;
 }
 
-video {
+video, iframe {
     width: 100%;
-    max-width: 800px;
+    max-width: 100%;
     height: auto;
     border-radius: 10px;
 }
 
-/* Responsiveness */
+/* Verbesserte Responsiveness für iPhones */
 @media screen and (max-width: 768px) {
     header h1 {
-        font-size: 36px;
+        font-size: 30px;
     }
 
     .container {
-        padding: 15px;
+        padding: 10px;
+        margin: 10px auto;
     }
 
     .section-box {
         width: 95%;
-        padding: 12px;
-    }
-
-    .heading-1 h2 {
-        font-size: 30px;
-    }
-
-    .was-das {
-        font-size: 18px;
         padding: 10px;
     }
 
-    .Kurzfilm h2 {
-        font-size: 24px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    header h1 {
-        font-size: 28px;
-    }
-
     .heading-1 h2 {
-        font-size: 26px;
+        font-size: 24px;
     }
 
     .was-das {
         font-size: 16px;
         padding: 8px;
-    }
-
-    .section-box {
-        padding: 10px;
+        width: 90%;
     }
 
     .Kurzfilm h2 {
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    .heading-1 h2 {
+        font-size: 22px;
+    }
+
+    .was-das {
+        font-size: 14px;
+        padding: 6px;
+        width: 100%;
+    }
+
+    .section-box {
+        padding: 8px;
+    }
+
+    .Kurzfilm h2 {
+        font-size: 18px;
     }
 }
