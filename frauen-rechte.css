@@ -7,7 +7,7 @@ body {
     color: #333;
 }
 
-/* Standard Container (Desktop) */
+/* Container */
 .container {
     max-width: 1200px;
     margin: 50px auto;
@@ -18,59 +18,156 @@ body {
     animation: fadeIn 1s ease-in-out;
 }
 
-/* Video Standard */
-video, iframe {
+/* Header */
+header h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #4b4b4b;
+    font-weight: 600;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Inhalte */
+.section-content {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.section-box {
+    border-radius: 20px;
+    background: linear-gradient(135deg, #ffb6c1, #add8e6);
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.heading-1 h2 {
+    font-size: 40px;
+    font-weight: bold;
+    background: linear-gradient(to right, white 45%, lightgray 48%, gray 50%, black 52%, black 55%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.was-das-container {
+    margin-top: 10px;
+}
+
+.was-das {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    font-size: 24px;
+    margin-top: 25px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #ffb6c1, #add8e6);
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.was-das a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Video */
+.Kurzfilm {
+    text-align: center;
+    margin-top: 30px;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.Kurzfilm h2 {
+    font-size: 30px;
+    color: #4b4b4b;
+    margin-bottom: 20px;
+}
+
+video {
     width: 100%;
     max-width: 800px;
     height: auto;
-    border-radius: 10px;
 }
 
-/* Mobile Anpassungen */
+/* Responsiveness */
 @media screen and (max-width: 768px) {
-    body {
-        background: linear-gradient(135deg, #ffffff, #f8f9fa);
+    header h1 {
+        font-size: 40px;
     }
 
     .container {
         padding: 15px;
-        margin: 10px auto;
-        box-shadow: none;
-        border-radius: 0;
-    }
-
-    header h1 {
-        font-size: 28px;
-        text-align: center;
+        margin: 20px auto;
     }
 
     .section-box {
-        border-radius: 10px;
-        background: linear-gradient(135deg, #ffb6c1, #add8e6);
-        padding: 10px;
-        margin: 10px auto;
         width: 95%;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        padding: 15px;
     }
 
     .heading-1 h2 {
-        font-size: 24px;
+        font-size: 32px;
     }
 
     .was-das {
+        font-size: 20px;
+        padding: 12px;
+    }
+
+    .Kurzfilm h2 {
+        font-size: 24px;
+    }
+
+    /* Video resizing for mobile */
+    video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Adjust margins and padding for smaller screens */
+    .was-das-container {
+        margin-top: 15px;
+    }
+    
+    /* Adjust font sizes for small screens */
+    .section-box {
         font-size: 16px;
-        padding: 8px;
-        width: 100%;
-        text-align: center;
-        border-radius: 8px;
+    }
+}
+
+/* Very small screens (e.g., under 480px width) */
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    .heading-1 h2 {
+        font-size: 28px;
+    }
+
+    .was-das {
+        font-size: 18px;
+    }
+
+    .section-box {
+        padding: 10px;
     }
 
     .Kurzfilm h2 {
         font-size: 20px;
     }
 
-    video, iframe {
-        max-width: 100%;
-        height: auto;
+    /* Further adjust layout */
+    .container {
+        padding: 10px;
+    }
+
+    .was-das {
+        font-size: 16px;
+        padding: 10px;
     }
 }
