@@ -5,108 +5,52 @@ body {
     padding: 0;
     background: linear-gradient(135deg, #f0f4f8, #e1e8f0);
     color: #333;
-    overflow-x: hidden;
 }
 
-/* Container */
+/* Standard Container (Desktop) */
 .container {
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 50px auto;
     padding: 20px;
     background-color: white;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     animation: fadeIn 1s ease-in-out;
 }
 
-/* Header */
-header h1 {
-    text-align: center;
-    font-size: 38px;
-    color: #4b4b4b;
-    font-weight: 600;
-    line-height: 1.2;
-}
-
-/* Inhalte */
-.section-content {
-    margin-top: 15px;
-    text-align: center;
-    padding: 10px;
-}
-
-.section-box {
-    border-radius: 15px;
-    background: linear-gradient(135deg, #ffb6c1, #add8e6);
-    padding: 12px;
-    margin: 10px auto;
-    width: 90%;
-    max-width: 800px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-}
-
-.heading-1 h2 {
-    font-size: 28px;
-    font-weight: bold;
-    background: linear-gradient(to right, white 45%, lightgray 48%, gray 50%, black 52%, black 55%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 10px;
-}
-
-/* Buttons */
-.was-das {
-    display: block;
-    text-align: center;
-    padding: 10px;
-    font-size: 18px;
-    margin-top: 10px;
-    border-radius: 10px;
-    background: linear-gradient(135deg, #ffb6c1, #add8e6);
-    font-weight: bold;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.was-das a {
-    text-decoration: none;
-    color: white;
-}
-
-/* Video */
-.Kurzfilm {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.Kurzfilm h2 {
-    font-size: 24px;
-    color: #4b4b4b;
-    margin-bottom: 15px;
-}
-
+/* Video Standard */
 video, iframe {
     width: 100%;
-    max-width: 100%;
+    max-width: 800px;
     height: auto;
     border-radius: 10px;
 }
 
-/* Verbesserte Responsiveness für iPhones */
+/* Mobile Anpassungen */
 @media screen and (max-width: 768px) {
-    header h1 {
-        font-size: 30px;
+    body {
+        background: linear-gradient(135deg, #ffffff, #f8f9fa);
     }
 
     .container {
-        padding: 10px;
+        padding: 15px;
         margin: 10px auto;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    header h1 {
+        font-size: 28px;
+        text-align: center;
     }
 
     .section-box {
-        width: 95%;
+        border-radius: 10px;
+        background: linear-gradient(135deg, #ffb6c1, #add8e6);
         padding: 10px;
+        margin: 10px auto;
+        width: 95%;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     }
 
     .heading-1 h2 {
@@ -116,34 +60,17 @@ video, iframe {
     .was-das {
         font-size: 16px;
         padding: 8px;
-        width: 90%;
+        width: 100%;
+        text-align: center;
+        border-radius: 8px;
     }
 
     .Kurzfilm h2 {
         font-size: 20px;
     }
-}
 
-@media screen and (max-width: 480px) {
-    header h1 {
-        font-size: 24px;
-    }
-
-    .heading-1 h2 {
-        font-size: 22px;
-    }
-
-    .was-das {
-        font-size: 14px;
-        padding: 6px;
-        width: 100%;
-    }
-
-    .section-box {
-        padding: 8px;
-    }
-
-    .Kurzfilm h2 {
-        font-size: 18px;
+    video, iframe {
+        max-width: 100%;
+        height: auto;
     }
 }
